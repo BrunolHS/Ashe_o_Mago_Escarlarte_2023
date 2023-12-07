@@ -88,7 +88,7 @@ public class Slime_Boss : MonoBehaviour
             if (hp <= 0)
 
             {
-                //animação do Boss
+                //animação do Boss morre
 
                 anim.SetTrigger("SlAmorte");
                 
