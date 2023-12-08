@@ -88,12 +88,14 @@ public class Slime_Boss : MonoBehaviour
             if (hp <= 0)
 
             {
-                //animação do Boss morre
+                //animaï¿½ï¿½o do Boss morre
 
                 anim.SetTrigger("SlAmorte");
                 
                 GetComponent<Rigidbody2D>().gravityScale = 0;
                 GetComponent<BoxCollider2D>().enabled = false;
+
+                Destroy(this.gameObject);
 
 
             }
